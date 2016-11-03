@@ -4,6 +4,6 @@ import { chai } from 'meteor/practicalmeteor:chai';
 
 describe('default', function () {
   it('passes', function () {
-    chai.assert.equal(true, true);
+    chai.assert.equal(false, true);
   });
 });
