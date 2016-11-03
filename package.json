@@ -9,7 +9,8 @@
     "test-watch-terminal": "TEST_WATCH=1 meteor test --driver-package dispatch:mocha-phantomjs",
     "test-app-watch-terminal": "TEST_WATCH=1 meteor test --full-app --driver-package dispatch:mocha-phantomjs",
     "lint": "eslint .",
-    "precommit": "npm run lint --silent"
+    "precommit": "npm run lint --silent",
+    "prepush": "npm run test"
   },
   "dependencies": {
     "meteor-node-stubs": "~0.2.0"
