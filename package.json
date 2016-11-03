@@ -8,7 +8,8 @@
     "test-app-watch": "meteor test --full-app --driver-package practicalmeteor:mocha",
     "test-watch-terminal": "TEST_WATCH=1 meteor test --driver-package dispatch:mocha-phantomjs",
     "test-app-watch-terminal": "TEST_WATCH=1 meteor test --full-app --driver-package dispatch:mocha-phantomjs",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "precommit": "npm run lint --silent"
   },
   "dependencies": {
     "meteor-node-stubs": "~0.2.0"
@@ -22,6 +23,7 @@
     "eslint-plugin-jsx-a11y": "^2.2.2",
     "eslint-plugin-meteor": "^4.0.0",
     "eslint-plugin-react": "^6.2.2",
+    "husky": "^0.11.9",
     "shell-source": "^1.1.0",
     "shelljs": "^0.7.4"
   },
