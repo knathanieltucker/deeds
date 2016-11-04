@@ -9,14 +9,22 @@
     "test-watch-terminal": "TEST_WATCH=1 meteor test --driver-package dispatch:mocha-phantomjs",
     "test-app-watch-terminal": "TEST_WATCH=1 meteor test --full-app --driver-package dispatch:mocha-phantomjs",
     "lint": "eslint .",
+    "commitmsg": "commitplease",
     "precommit": "npm run lint --silent",
     "prepush": "npm run test"
+  },
+  "commitplease": {
+    "style": "jquery",
+    "component": true,
+    "components": [],
+    "nohook": true
   },
   "dependencies": {
     "meteor-node-stubs": "~0.2.0"
   },
   "devDependencies": {
     "babel-eslint": "^6.1.2",
+    "commitplease": "^2.7.5",
     "eslint": "^3.5.0",
     "eslint-config-airbnb": "^11.1.0",
     "eslint-import-resolver-meteor": "^0.3.3",
